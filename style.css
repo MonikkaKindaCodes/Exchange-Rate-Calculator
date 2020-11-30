@@ -36,10 +36,16 @@ p {
 
 .btn {
     background-color: #ab80d3;
+    color: #fff;
+    border: none;
     cursor: pointer;
     border-radius: 5px;
     font-size: 12px;
     padding: 5px 12px;
+}
+
+.btn:hover {
+    background-color: #a168d6;
 }
 
 .credit{
@@ -63,4 +69,46 @@ p {
     background-position: right 3px top 49%, 0, 0;
     background-size: 12px auto, 100%;
     background-repeat: no-repeat;
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+select:focus, 
+input:focus, 
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 90%;
+    }
+
+    p {
+        font-size: 50%;
+    }
 }
